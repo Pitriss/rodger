@@ -243,12 +243,15 @@ def kernels(f,body,c):
 		r = f.read()
 		f.close()
 
-		p = re.compile("\>([0-9]{1,2}[\.\-][0-9]{1,2}[\.\-][0-9]{1,2}[\.\-][a-z0-9\-]{0,20})",re.S)
+		p = re.compile("\>([0-9]{1,2}[\.\-][0-9]{1,2}[\.\-][0-9]{1,2}[a-z0-9\-\.]{0,20})",re.S)
 		g = p.findall(r)
 
 		text = "Aktuální jádra: "
+		prvx = ""
 		for x in g:
-			text += x+", "
+			if x != prvx:
+				text += x+", "
+				prvx = x
 
 		return text[:-2]
 	
