@@ -1,0 +1,15 @@
+Nápověda k tomu co umím.
+.rss - bez parametru vypíše seznam možných serverů, které je možno dát jako parametr
+.pocasi - vypíše počasí na následující 4 dny z www.e-pocasi.cz
+.kernels - zobrazí aktuální vanila jádra
+.learn na_co_mám_reagovat:čím_mám_odpovědět - před dvojtečkou nemusí být nic
+.auth jid a .deauth jid - autorizuje či deautorizuje JID
+.tv <program> - bez parametru vrátí seznam možných parametrů, s parametrem vrátí další 4 pořady na vybrané tv
+.svatek <datum> - bez parametru vrací kdo má dnes svátek, parametr může být datum a v tom případě vrací svátek na zadaném datu (formát dd.mm.)
+.top - Vypíše nejtvrdší spamery
+.hlasky - Vrátí počet hlášek v komunikační databázi.
+.news - Botí novinky
+.bad - špatná slova
+.stat - botí statistika
+
+S botem se dá komunikovat i soukromě ! (rodger@linjab.net)
